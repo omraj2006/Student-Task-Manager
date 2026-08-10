@@ -1,6 +1,6 @@
 
 const taskForm = document.getElementById("taskForm");
-
+const priority = document.getElementById("priority");
 const taskTitle = document.getElementById("taskTitle");
 const subject = document.getElementById("subject");
 const description = document.getElementById("description");
@@ -19,15 +19,12 @@ taskForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
     const task = {
-        id: Date.now(),
-
-        title: taskTitle.value,
-
-        subject: subject.value,
-
-        description: description.value,
-
-        completed: false
+    id: Date.now(),
+    title: taskTitle.value,
+    subject: subject.value,
+    description: description.value,
+    priority: priority.value,
+    completed: false
     };
 
 
@@ -75,6 +72,10 @@ function displayTasks() {
 
             <p class="subject">
                 Subject: ${task.subject}
+            </p>
+
+            <p class="priority">
+                Priority: ${task.priority}
             </p>
 
             <p class="description">
