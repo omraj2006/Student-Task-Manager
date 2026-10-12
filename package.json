@@ -1,14 +1,13 @@
-
 {
   "name": "student_task_management",
   "version": "1.0.0",
   "description": "Student Task Manager application",
   "main": "app.js",
- "scripts": {
-  "start": "node app.js",
-  "build": "node --check app.js && node --check public/script.js",
-  "test": "echo \"Error: no test specified\" && exit 1"
-},
+  "scripts": {
+    "start": "node app.js",
+    "build": "node --check app.js && node --check public/script.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/omraj2006/Student-Task-Manager.git"
